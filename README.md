@@ -55,14 +55,14 @@ A aplicação estará disponível em `http://localhost:8080`.
 ### 4. Instale dependências
 
 ```bash
-docker exec -it app composer install
-docker exec -it app npm install && npm run dev
+docker exec -it laravel_app composer install
+docker exec -it laravel_app npm install && npm run dev
 ```
 
 ### 5. Rode as migrations e seeds
 
 ```bash
-docker exec -it app php artisan migrate --seed
+docker exec -it laravel_app php artisan migrate --seed
 ```
 
 ---
